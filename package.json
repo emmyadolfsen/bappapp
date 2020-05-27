@@ -1,6 +1,9 @@
 {
     "name": "fullstack_vue_express",
     "version": "1.0.0",
+    "engines": {
+        "node": "13.12.x"
+    },
     "description": "Fullstack vue and express app",
     "main": "index.js",
     "scripts": {
