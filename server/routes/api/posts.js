@@ -13,6 +13,7 @@ router.get('/', async(req, res) => {
 router.post('/', async(req, res) => {
     const posts = await loadPostsCollection();
     await posts.insertOne({
+        name: req.body.name,
         text: req.body.text,
         createdAt: new Date()
     });
@@ -24,6 +25,15 @@ router.delete('/:id', async(req, res) => {
     const posts = await loadPostsCollection();
     await posts.deleteOne({ _id: new mongodb.ObjectID(req.params.id) });
     res.status(200).send();
+});
+
+
+// Update
+router.put('/:id', async(req, res) => {
+    const post = await loadPostsCollection();
+    await post.updateOne({ _id: new mongodb.ObjectID(req.params.id) }, { $set: { name: req.body.name, text: req.body.text } });
+
+    res.status(201).send();
 });
 
 async function loadPostsCollection() {
