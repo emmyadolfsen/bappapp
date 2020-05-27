@@ -102,6 +102,7 @@ methods: {
 
 <style>
 h1 {
+  font-size: 1.8rem;
   margin: 1rem;
   margin-block-end: 0;
 }
@@ -113,6 +114,7 @@ p {
   margin-block-start: 0;
 }
 input[type=text], textarea {
+  box-shadow: 2px 2px 5px 0px rgba(107,106,107,0.74);
   font-style: italic;
   height: 1.5rem;
   font-size: 1rem;
@@ -125,7 +127,7 @@ input[type=text]#name {
 }
 textarea.input-field {
   text-align: center;
-  width: 80%;
+  width: 84%;
   padding: 1rem;
 }
 ::placeholder {
@@ -134,30 +136,34 @@ textarea.input-field {
 textarea {
   border-radius: 2px;
   font-size: 1rem;
-  width: 300px;
+  width: 94%;
+  max-width: 300px;
   height: 100px;
   border: none;
 }
 .text, .name, .text-date {
   margin: auto;
   overflow: auto;
-  width: 80%;
-  padding: 1rem;
+  width: 90%;
+  padding: 1rem 0 1rem 0;
   font-weight: 100;
   font-style: italic;
-}
-.text {
-  color:rgb(0, 0, 0);
-  font-weight: 400;
 }
 .name, .text-date {
   margin-top: 0;
   padding: 0;
 }
+.text {
+  border-top: 0.5px solid rgb(112, 110, 110);
+  color:rgb(0, 0, 0);
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
 
 .create-btn {
   height: 1.5rem;
-  width: 10%;
+  width: 5rem;
   font-size: 0.9rem;
     background-color: rgba(0, 139, 139, 0.637);
     border: none;
@@ -180,13 +186,12 @@ color: rgb(54, 52, 52);
  border-bottom: 0.5px solid rgb(87, 85, 85);
 }
 div.post {
-  width: 30%;
+
+  width: 100%;
+  max-width: 400px;
   display: block;
   margin: auto;
-  margin-top: 1%;
-  padding: 2%;
+  padding-bottom: 1rem;
   font-weight: 700;
-  border-top: 0.5px solid rgb(87, 85, 85);
-
 }
 </style>

@@ -1,11 +1,9 @@
 <template>
   <div id="app">
       <div id="appen">
-        <div class="polaroid">
-    <img alt="Astrid" src="./assets/surfbuss.jpg">
-        <div class="container">
-          Surfkaffe
-        </div>
+        <div class="top-img">
+    <img alt="Surfbus and coffee" src="./assets/surfbuss.jpg">
+
         </div>
     <blockquote>
       “Låt därför livet bära med sig vad det vill,<br> och låt mig vara stark nog att ta emot vad det bjuder.”
@@ -44,25 +42,23 @@ export default {
   width: 40%;
 }
 
-div.polaroid {
-  font-family: serif;
-  display: block;
-  margin: auto;
-  width: 30%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.top-image {
+  width: 96%;
 }
-
 img {
-  width: 100%
+  border-radius: 0.2rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 6px 6px 19px 0px rgba(107,106,107,0.74);
   }
   img:hover {
     transform: scaleX(-1);
   }
-
-div.container {
-  text-align: center;
-  padding: 20px 20px;
+blockquote {
+  margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
 }
 
 </style>
